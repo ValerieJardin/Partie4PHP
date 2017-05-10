@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"> 
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"/> 
         <!--Lien pour cssiser la vue-->
         <link href="../style.css" rel="stylesheet" type="text/css"/>
         <!-- Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui renvoit 
@@ -14,15 +15,13 @@
             <?php
 
 // Déclaration de ma fonction pour concaténer un nombre et une chaîne de caractères 
-            function concatenate($number, $sentence) {
+            function concatStringNumber($integer, $character) {
 // J'indique ce que doit renvoyer ma fonction               
-                return $number . $sentence;
+                return $integer . $character;
             }
 
-// Appel de la fonction en donnant des valeurs aux deux paramètres de ma fonction comparator
-            $number = 10;
-            $sentence = ' % de réduction sur les champignons !';
-            echo concatenate($number, $sentence);
+// Appel de la fonction en donnant des valeurs aux deux paramètres de ma fonction concatStringNumber
+            echo concatStringNumber(10, ' % de réduction sur les champignons !');
             ?>       
         </p>
         <!-- Mise en place des boutons de re-direction-->

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -12,10 +13,12 @@
         <p>
             <?php
 
+// Déclaration de la fonction, son nom et (les paramètres) 
             function truth() {
+                //Ce que je dois retourner
                 return true;
             }
-
+//Affichage de la fonction
             echo truth();
             ?>
         </p>

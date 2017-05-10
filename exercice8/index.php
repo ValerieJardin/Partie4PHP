@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -14,16 +15,17 @@
             <?php
 
 // Déclaration de ma fonction add servant à additionner 3 nombres ayant une valeur par défaut 
-            function add() {
-// J'indique ce que doit renvoyer ma fonction càd la somme des trois nombres               
-                $sum = 15 + 256 + 357;
+            function add($number1=0, $number2=0, $number=0) {
+// J'indique ce que doit renvoyer ma fonction càd la somme des trois nombres
+                $sum = $number1 + $number2 + $number;
                 return $sum;
             }
+            ?>
+        <!--Appel de la fonction--> 
 
-// Appel de la fonction 
-
-            echo add();
-            ?>       
+        <p><?php echo add(156, 52, 2); ?></p>
+        <!-- L'intéret de mettre des variables par défaut qui n'ont pas d'incidence c'est qu'ensuite je peux mettre que 2 valeurs-->
+        <p><?php echo add(156, 52); ?></p>  
         </p>
         <!-- Mise en place des boutons de re-direction-->
         <div class="buttons">

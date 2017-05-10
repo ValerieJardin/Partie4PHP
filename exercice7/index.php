@@ -1,8 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"> 
-        <!--Lien pour cssiser la vue-->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"/> 
         <link href="../style.css" rel="stylesheet" type="text/css"/>
         <!-- Faire une fonction qui prend deux paramètres : age et genre. Le paramètre genre peut 
              prendre comme valeur :
@@ -21,31 +21,31 @@
         <p>
             <?php
 
-// Déclaration de ma fonction pour concaténer un nombre et une chaîne de caractères 
-            function gender_age($gender, $age) {
-// J'indique ce que doit renvoyer ma fonction               
-// Déclaration des conditions sur le genre
+            // Déclaration de ma fonction pour concaténer un nombre et une chaîne de caractères 
+            function checkGenderAge($gender, $age) {
+                // J'indique ce que doit renvoyer ma fonction               
+                // Déclaration des conditions sur le genre
                 if ($gender == 'femme') {
-                    $variable_genre = 'Vous êtes une femme ';
-                } elseif ($gender == 'homme') {
-                    $variable_genre = 'Vous êtes un homme ';
+                    $variable_gender = 'Vous êtes une femme ';
+                }else{
+                    $variable_gender = 'Vous êtes un homme ';
                 }
-// Déclaration des conditions sur l'âge
+                // Déclaration des conditions sur l'âge
                 if (!is_int($age) || $age < 0) {
                     $variable_age = ' mais vous n\'avez pas entré une valeur correspondant à un âge !! ';
-                } elseif ($age < 18) {
+                }elseif ($age < 18) {
                     $variable_age = 'et vous êtes mineur.';
-                } elseif ($age >= 18) {
+                }else{
                     $variable_age = 'et vous êtes majeur.';
                 }
-// Indique ce que doit retourner ma fonction en tenant compte des valeurs de ses paramêtres                
-                return $variable_genre . $variable_age;
+                // Indique ce que doit retourner ma fonction en tenant compte des valeurs de ses paramètres                
+                return $variable_gender . $variable_age;
             }
 
-// Appel de la fonction en donnant des valeurs aux deux paramètres de ma fonction comparator
+            // Appel de la fonction en donnant des valeurs aux deux paramètres de ma fonction checkGenderAge
             $gender = 'femme';
             $age = -3;
-            echo gender_age($gender, $age);
+            echo checkGenderAge($gender, $age);
             ?>       
         </p>
         <!-- Mise en place des boutons de re-direction-->

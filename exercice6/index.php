@@ -13,17 +13,25 @@
         <p>
             <?php
 
-// Déclaration de ma fonction pour concaténer un nombre et une chaîne de caractères 
-            function concatenate($firstname, $lastname, $age) {
+// Déclaration de ma fonction pour concaténer 3 variables 
+            /**
+             * 
+             * @param type $firstname
+             * @param type $lastname
+             * @param type $age
+             * @return type
+             * 
+             */
+            function welcome($firstname, $lastname, $age) {
 // J'indique ce que doit renvoyer ma fonction càd concaténation des trois paramètres               
                 return 'Bonjour ' . $firstname . ' ' . $lastname . ', tu as ' . $age . ' ans.';
             }
 
-// Appel de la fonction en donnant des valeurs aux deux paramètres de ma fonction comparator
+// Appel de la fonction en donnant des valeurs aux 3 paramètres de ma fonction welcome
             $firstname = 'Will';
             $lastname = 'FRIDE';
             $age = 24;
-            echo concatenate($firstname, $lastname, $age);
+            echo welcome($firstname, $lastname, $age);
             ?>       
         </p>
         <!-- Mise en place des boutons de re-direction-->

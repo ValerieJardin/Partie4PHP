@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"> 
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"/> 
         <!--Lien pour cssiser la vue-->
         <link href="../style.css" rel="stylesheet" type="text/css"/>
         <!--Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette même chaine.-->
@@ -13,10 +14,14 @@
             <?php
             // Déclaration de la variable contenant la chaîne de caractères 
             $sentence = 'Il était seul, j\'étais seule alors nous nous sommes dit pourquoi pas ...';
+
             // Fonction PHP permettant de retourner la chaîne déclarée
-            $same = print($sentence);
+            function returnstring($sentence) {
+                return($sentence);
+            }
+
             // Affichage du résultat de la fonction
-            echo $same;
+            echo returnstring($sentence);
             ?> 
         </p>
         <!-- Mise en place des boutons de re-direction-->
